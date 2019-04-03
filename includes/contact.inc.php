@@ -1,13 +1,11 @@
 <h1>Contact</h1>
 
 <?php
-if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
-    if (isset($_SESSION['prenom']) && isset($_SESSION['nom'])) {
 
-        $nom = $_SESSION['nom'];
-        $prenom = $_SESSION['prenom'];
-        $mail = $_SESSION['mail'];
-
+$nom = isset($_POST['nom']) ? $_POST['nom'] : "";
+$prenom = isset($_POST['prenom']) ? $_POST['prenom'] : "";
+$mail = isset($_POST['mail']) ? $_POST['mail'] : "";
+$texte = isset($_POST['texte']) ? $_POST['texte'] : "";
 
 
         if (isset($_POST['maurice'])) {
@@ -45,5 +43,19 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
         else {
         echo "Votre message a bien été envoyé!";}
         }
-        }require_once "frmContact.php";}
+        require_once "frmContact.php";
+            $sql = "INSERT INTO T_CONTACTS
+                (CTCNOM, CTCPRENOM, CTCMAIL, CTCTEXTE)
+                VALUES ('" . $nom . "', '" . $prenom . "', '" . $mail . "', '" . $texte . "')";
+
+            $query = $pdo->prepare($sql);
+            $query->bindValue('CTCNOM', $nom, PDO::PARAM_STR);
+            $query->bindValue('CTCPRENOM', $prenom, PDO::PARAM_STR);
+            $query->bindValue('CTCMAIL', $mail, PDO::PARAM_STR);
+            $query->bindValue('CTCTEXTE', $texte, PDO::PARAM_STR);
+            $query->execute();
+
+
+
+
 ?>

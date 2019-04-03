@@ -3,6 +3,8 @@
 if (!isset($nom)) $nom = "";
 if (!isset($prenom)) $prenom = "";
 if (!isset($mail)) $mail = "";
+if (!isset($texte)) $texte = "";
+
 ?>
 
 <div class="container">
@@ -29,7 +31,7 @@ if (!isset($mail)) $mail = "";
         </div></div></div>
     <div class="form-group">
         <label for="texte">Votre message&nbsp;: </label>
-        <textarea id="texte" class="form-control" name="texte" rows="9" cols="30" required placeholder="Message" value="<?=$texte?>"/></textarea>
+        <textarea id="texte" class="form-control" name="texte" rows="9" cols="30" required="required" placeholder="Votre message" value="<?=$texte?>"/></textarea>
     </div>
     <div class="col-md-12">
         <input class="btn btn-primary pull-right" type="reset" value="Effacer" />

@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=rfd-php',
+    $pdo = new PDO('mysql:host=localhost;dbname=CVSite',
         'root',
         '',
         array(
