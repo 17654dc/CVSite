@@ -21,21 +21,21 @@ if (!isset($texte)) $texte = "";
     </div>
     <div class="form-group">
         <label for="prenom">Prénom&nbsp;: </label>
-        <input type="text" class="form-control id="prenom" name="prenom" required="required" value="<?=$prenom?>" />
+        <input type="text" class="form-control" id="prenom" name="prenom" required="required" value="<?=$prenom?>" />
     </div>
     <div class="form-group">
         <label for="mail">Mail&nbsp;: </label>
         <div class="input-group"><span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-        <input type="text" class="form-control id="mail" name="mail" required="required" value="<?=$mail?>" />
+        <input type="text" class="form-control" id="mail" name="mail" required="required" value="<?=$mail?>" />
         </div></div></div>
     <div class="form-group">
-        <label for="texte">Votre message&nbsp;: </label>
-        <textarea id="texte" class="form-control" name="texte" rows="9" cols="30" required="required" placeholder="Votre message" value="<?=$texte?>"/></textarea>
+        <label for="texte"></label>
+        <textarea id="texte" class="form-control" name="texte" rows="9" cols="45" required="required" placeholder="Votre message..."><?=$texte?></textarea>
     </div>
     <div class="col-md-12">
-        <input class="btn btn-primary pull-right" type="reset" value="Effacer" />
         <input class="btn btn-primary pull-right" type="submit" value="Envoyer" />
+        <input class="btn btn-primary pull-right" type="reset" value="Effacer" />
     </div>
     <input type="hidden" name="maurice" />
         </div>

@@ -5,19 +5,28 @@ html,body {
     background-position: center;
     background-attachment: fixed;
     height: 100%;
-    text-decoration: none;
 
 }
 nav ul{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
+header {
+    position: fixed;
+    right: 0;
+    top: 5%;
+    width: 100%;
+}
+
+main {
+    margin-top: 12%;
+}
+
 nav li{
     margin-right: 10px;
 
@@ -34,16 +43,20 @@ nav li a{
     border:1px solid;
     border-radius: 15px 15px 15px 15px;
 }
+
+a:hover {
+    text-decoration: none;
+}
+
 .logo:nth-child(1)
 {
     flex: 3;
 }
 
-.menuTransitionBackground a{
+.menuTransitionBackground nav ul li a{
     text-decoration: none;
     padding:10px;
     color: #444664;
-    text-decoration:none;
     background:#FFFFFF;
     -webkit-transition: all .6s ease-in;
     -moz-transition: all .6s ease-in;
@@ -51,6 +64,71 @@ nav li a{
     transition: all .6s ease-in;
 }
 .menuTransitionBackground a:hover{
+    text-decoration: none;
     color:#FFFFFF;
     background: #444664;
+}
+
+aside {
+    margin-right: 20px;
+    float: right;
+    width: 20%;
+    background-color: rgba(205, 92, 92, 0.8);
+
+}
+
+.centre {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float: left;
+    width: 75%;
+    background-color: white;
+
+}
+
+.titre {
+    color: #444664;
+    font-size: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color:white;
+    font-family: Montserrat;
+
+
+
+
+}
+.titre2 {
+    color: white;
+    font-size: 16px;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: Montserrat;
+
+
+
+}
+.paragraphe {
+    color= gray;
+    font-size: 12px;
+    margin-left: 2%;
+    text-align: justify;
+    margin-right: 2%;
+    font-family: Montserrat;
+
+}
+
+footer {
+    clear:both;
+}
+
+.icone {
+    width: 60px;
+    height: auto;
+}
+.comp {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

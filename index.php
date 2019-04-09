@@ -10,6 +10,7 @@ else {
 }*/
 
 //echo session_id();
+
 date_default_timezone_set('Europe/Paris');
 include_once "./functions/debug.php";
 include_once "./includes/pdo.php";
