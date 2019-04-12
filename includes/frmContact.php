@@ -1,9 +1,9 @@
 <?php
 
-if (!isset($nom)) $nom = "";
-if (!isset($prenom)) $prenom = "";
-if (!isset($mail)) $mail = "";
-if (!isset($texte)) $texte = "";
+    if (!isset($nom)) $nom = "";
+    if (!isset($prenom)) $prenom = "";
+    if (!isset($mail)) $mail = "";
+    if (!isset($texte)) $texte = "";
 
 ?>
 

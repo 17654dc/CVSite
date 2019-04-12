@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 
 /*if (isset($_SESSION['login']) && $_SESSION['login'] == 1) {
     echo "Vous etes connecte";
