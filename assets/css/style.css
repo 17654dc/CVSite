@@ -42,6 +42,11 @@ nav li a{
     padding:10px;
     border:1px solid;
     border-radius: 15px 15px 15px 15px;
+    -webkit-transition: all .6s ease-in;
+    -moz-transition: all .6s ease-in;
+    -o-transition: all .6s ease-in;
+    transition: all .6s ease-in;
+
 }
 
 a:hover {
@@ -53,11 +58,11 @@ a:hover {
     flex: 3;
 }
 
+.menu_principal1 { position: absolute; top: 0px; left:0; height: 25px; width: 100%; }
+.menu_principal2 { position: fixed; top: 0; left:0; height: 25px; width: 100%; }
+
 .menuTransitionBackground nav ul li a{
-    text-decoration: none;
-    padding:10px;
-    color: #444664;
-    background:#FFFFFF;
+
     -webkit-transition: all .6s ease-in;
     -moz-transition: all .6s ease-in;
     -o-transition: all .6s ease-in;
@@ -78,12 +83,20 @@ aside {
 }
 
 .centre {
-    margin-left: 20px;
-    margin-bottom: 10px;
-    float: left;
-    width: 75%;
-    background-color: rgba(255, 255, 255, 0.9);
+      margin-left: 20px;
+      margin-bottom: 10px;
+      float: left;
+      width: 75%;
+      background-color: rgba(255, 255, 255, 0.9);
 
+  }
+
+.centre_real {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 97%;
+    background-color: rgba(255, 255, 255, 0.9);
 
 }
 
@@ -139,6 +152,9 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    align-content: baseline;
+
 }
 
 
@@ -170,7 +186,6 @@ footer {
 }
 .twAudessus img {
     /* Le contour de l’image */
-    max-width:1200px;
     padding: 10px;
     /* -webkit-border-radius: 10px;
      -moz-border-radius: 10px;*/
@@ -182,12 +197,51 @@ footer {
     -webkit-transition: width 2s;
     transition: width 2s;
 }
-@media screen and (max-width: 1600px){.twAudessus img { max-width:1000px; }}
+@media screen and (max-width: 1600px){.twAudessus img { max-width:440px; }}
 @media screen and (max-width: 1024px){.twAudessus img { max-width:700px; }}
 @media screen and (max-width: 800px){.twAudessus img { max-width:500px; }}
 @media screen and (max-width: 600px){.twAudessus img { max-width:400px; }}
 @media screen and (max-width: 500px){.twAudessus img { max-width:250px; }}
 
+.twAudessus2 {
+    /* Le trame de fond */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    display: none;
+    background: rgba(0,0,0,0.7);
+    /*-webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; */
+}
+.twAudessus2 a {
+    /* Le truc pour centrer l’image */
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.twAudessus2 img {
+    /* Le contour de l’image */
+    padding: 10px;
+    /* -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;*/
+    background: #ffffff;
+}
+
+.twAudessus2:target {
+    /* Affichage de l’image */
+    display: table;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+@media screen and (max-width: 1600px){.twAudessus2 img { max-width:800px; }}
+@media screen and (max-width: 1024px){.twAudessus2 img { max-width:700px; }}
+@media screen and (max-width: 800px){.twAudessus2 img { max-width:500px; }}
+@media screen and (max-width: 600px){.twAudessus2 img { max-width:400px; }}
+@media screen and (max-width: 500px){.twAudessus2 img { max-width:250px; }}
 .photo_gauche {
     float:left;
 
@@ -230,7 +284,38 @@ article#alignement_photo div:nth-child(2) {
     padding: 0 0 0 10px;
 }
 article#alignement_photo div:nth-child(3) {
-    padding: 0 0 0 400px;
+    padding: 0 0 0 200px;
     align-content: center;
 }
 
+.alert {
+       background-color: rgba(205, 92, 92, 0.8);
+       color : white;
+       font-family: Montserrat;
+       font-style: italic;
+       padding: 0 0 0 10px;
+}
+
+.ok {
+    background-color: rgba(205, 92, 92, 0.8);
+    color : white;
+    font-family: Montserrat;
+    font-style: italic;
+    padding: 0 0 0 10px;
+}
+
+.legende_real {
+    background-color: rgba(205, 92, 92, 0.8);
+    color : white;
+    font-family: Montserrat;
+    font-style: italic;
+    align-items: baseline;
+    padding: 0 0 0 10px;
+    text-align: center;
+}
+
+
+.footer {
+    color: white;
+    text-align: center;
+}

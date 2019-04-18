@@ -8,7 +8,7 @@
 $nom = isset($_POST['nom']) ? $_POST['nom'] : "";
 $prenom = isset($_POST['prenom']) ? $_POST['prenom'] : "";
 $mail = isset($_POST['mail']) ? $_POST['mail'] : "";
-$texte = trim(isset($_POST['texte']) ? $_POST['texte'] : "");
+$texte = addslashes(trim(isset($_POST['texte']) ? $_POST['texte'] : ""));
 
 if (!isset($_POST['maurice'])) {
     require_once "frmContact.php";
@@ -30,7 +30,7 @@ if (!isset($_POST['maurice'])) {
             array_push($erreurs, "Votre message est vide.");
 
         if (count($erreurs) > 0) {
-            $message = "<ul>";
+            $message = "<ul class='alert'>";
             $i = 0;
 
             while ($i < count($erreurs)) {
@@ -57,7 +57,7 @@ if (!isset($_POST['maurice'])) {
             $query->execute();
 
 
-            echo "Votre message a bien été envoyé!";
+            echo "<p class='ok'>Votre message a bien été envoyé!</p>";
 
         }
     }

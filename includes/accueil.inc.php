@@ -1,28 +1,22 @@
 <h1 class="titre3">Bienvenue sur ce Site-CV</h1>
 
+    <aside>
+        <h1 class="titre">Formation</h1>
 
-<aside>
-
-    <h1 class="titre">Formation</h1>
-
-        <p class="titre2">2019 - NFactory School<br> Campus Saint Marc - Rouen</p>
-        <p class="paragraphe">Formation Référent Digital</p>
-        <p class="titre2">2002-2004 - CESI
-            Mont-Saint-Aignan</p>
-        <p class="paragraphe">Formation de concepteur développeur
-            intégrateur multimédia <br> Diplôme obtenu.</p>
-        <p class="titre2">1997-2002 - Faculté de Psychologie/Sociologie
-            Mont-Saint-Aignan.</p>
-        <p class="paragraphe">Niveau DEUG</p>
-        <p class="titre2">1993-1996 - Lycée les Fontenelles
-        Louviers</p>
-        <p class="paragraphe">Baccalauréat
-            Section Sciences économiques et Sociales</p>
+            <p class="titre2">2019 - NFactory School<br> Campus Saint Marc - Rouen</p>
+            <p class="paragraphe">Formation Référent Digital</p>
+            <p class="titre2">2002-2004 - CESI
+            <p class="paragraphe">Formation de concepteur développeur intégrateur multimédia <br> Diplôme obtenu.</p>
+            <p class="titre2">1997-2002 - Faculté de Psychologie/Sociologie Mont-Saint-Aignan.</p>
+            <p class="paragraphe">Niveau DEUG</p>
+            <p class="titre2">1993-1996 - Lycée les Fontenelles Louviers</p>
+            <p class="paragraphe">Baccalauréat Sciences économiques et Sociales</p>
 
 
-</aside>
+    </aside>
     <article id="alignement_photo">
-            <div><img src="./assets/imgs/moi.png" alt="Photo David Claassen" title="Photo Beau gosse" width="170" /></div>
+            <div>
+                <img src="./assets/imgs/moi.png" alt="Photo David Claassen" title="Photo Beau gosse" width="170" /></div>
             <div>
                 <h1 class="titre3">David Claassen</h1>
 
@@ -31,9 +25,9 @@
                 621b Rue du Général de Gaulle<br>
                 76520&nbsp;FRANQUEVILLE&nbsp;ST&nbsp;PIERRE<br></p>
             </div>
-            <div align="center">
-                <a href="https://www.linkedin.com/in/david-claassen-583764bb" target="_blank"><img src="./assets/imgs/logo_ln.png" alt="lien LinkedIn" title="Lien LinkedIn" width="50" /></a><a href="https://github.com/17654dc" target="_blank"><img src="./assets/imgs/logo_github.png" alt="lien GitHub" title="Lien GitHub" width="50" /></a></p>
-        </div>
+            <div>
+                <a href="https://www.linkedin.com/in/david-claassen-583764bb" target="_blank"><img src="./assets/imgs/logo_ln.png" alt="lien LinkedIn" title="Lien LinkedIn" width="50" /></a>&nbsp;&nbsp;<a href="https://github.com/17654dc" target="_blank"><img src="./assets/imgs/logo_github.png" alt="lien GitHub" title="Lien GitHub" width="50" /></a>&nbsp;&nbsp;<a href="#id84" class="twpop"><img src="./assets/imgs/logo_cv.png" alt="lien CV" title="Lien CV" width="50" /></a><div class="twAudessus" id="id84"><a title="CV david Claassen" href="#ferme"> <img alt="Image" src="./assets/imgs/cv_grand.png"> </a> </div>
+            </div>
     </article>
     <article>
         <div class="centre">
@@ -43,6 +37,7 @@
                 <p class="paragraphe">J'ai hâte de bientôt pouvoir mettre en application tout ce que cette formation m'aura apprise!</p>
         </div>
     </article>
+    <article>
         <div class="centre">
             <h3 class="titre">Compétences</h3>
                 <div class="comp">
@@ -56,3 +51,4 @@
                     <p align="center"><br>Community Management<br><br> Développement de la<br>communivation sur les<br>réseaux sociaux</p>
                 </div>
          </div>
+    </article>
